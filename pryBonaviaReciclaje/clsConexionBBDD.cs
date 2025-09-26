@@ -245,42 +245,42 @@ namespace pryBonaviaReciclaje
         #endregion
 
         #region Metodos Auditoria...
-        //public void cargarListaAuditoria(clsAuditoria lista)
-        //{
-        //    try
-        //    {
-        //        conexionBaseDatos = new SqlConnection(cadenaConexion);
-        //        conexionBaseDatos.Open();
+        public void cargarListaAuditoria(clsAuditoria lista)
+        {
+            try
+            {
+                conexionBaseDatos = new SqlConnection(cadenaConexion);
+                conexionBaseDatos.Open();
 
-        //        string query = "SELECT * FROM Auditoria";
-        //        comandoBaseDatos = new SqlCommand(query, conexionBaseDatos);
+                string query = "SELECT * FROM Auditoria";
+                comandoBaseDatos = new SqlCommand(query, conexionBaseDatos);
 
-        //        lista.lstAuditoria.Clear();
+                lista.lstAuditoria.Clear();
 
-        //        using (SqlDataReader reader = comandoBaseDatos.ExecuteReader())
-        //        {
-        //            while (reader.Read())
-        //            {
-        //                clsRegistro registro = new clsRegistro(
-        //                    reader.GetInt32(0),       // Id
-        //                    reader.GetInt32(1),       // UsuarioId
-        //                    reader.GetString(2),      // TipoEvento
-        //                    reader.GetDateTime(3),    // FechaHoraEvento
-        //                    reader.GetString(4)       // Descripcion
-        //                );
-        //                lista.lstAuditoria.Add(registro);
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        conexionBaseDatos.Close();
-        //    }
-        //}
+                using (SqlDataReader reader = comandoBaseDatos.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        clsRegistro registro = new clsRegistro(
+                            reader.GetInt32(0),       // Id
+                            reader.GetInt32(1),       // UsuarioId
+                            reader.GetString(2),      // TipoEvento
+                            reader.GetDateTime(3),    // FechaHoraEvento
+                            reader.GetString(4)       // Descripcion
+                        );
+                        lista.lstAuditoria.Add(registro);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexionBaseDatos.Close();
+            }
+        }
 
         public void registrarEnAuditoria(clsRegistro registro)
         {

@@ -146,7 +146,7 @@
             usuariosToolStripMenuItem.BackColor = Color.FromArgb(14, 32, 37);
             usuariosToolStripMenuItem.ForeColor = Color.FromArgb(29, 180, 98);
             usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            usuariosToolStripMenuItem.Size = new Size(180, 22);
+            usuariosToolStripMenuItem.Size = new Size(132, 22);
             usuariosToolStripMenuItem.Text = "Usuarios...";
             usuariosToolStripMenuItem.Click += usuariosToolStripMenuItem_Click;
             // 
@@ -155,14 +155,14 @@
             toolStripMenuItem1.BackColor = Color.FromArgb(14, 32, 37);
             toolStripMenuItem1.ForeColor = SystemColors.Control;
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(177, 6);
+            toolStripMenuItem1.Size = new Size(129, 6);
             // 
             // auditoriaToolStripMenuItem
             // 
             auditoriaToolStripMenuItem.BackColor = Color.FromArgb(14, 32, 37);
             auditoriaToolStripMenuItem.ForeColor = Color.FromArgb(29, 180, 98);
             auditoriaToolStripMenuItem.Name = "auditoriaToolStripMenuItem";
-            auditoriaToolStripMenuItem.Size = new Size(180, 22);
+            auditoriaToolStripMenuItem.Size = new Size(132, 22);
             auditoriaToolStripMenuItem.Text = "Auditoria...";
             auditoriaToolStripMenuItem.Click += auditoriaToolStripMenuItem_Click;
             // 

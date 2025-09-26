@@ -170,7 +170,7 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.mrcElegirOpción);
             this.Controls.Add(this.dgvMostrar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAuditoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administración - Auditoria";
